@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Cesar{% endblock %}
+{% block body %}
+<div class="card text-center container">
+  <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <form method="post">
+            <div class="form-group mt-3">
+              <label for="exampleFormControlTextarea1">Put your crypt text here.</label>
+              <textarea name="textcrypt" class="form-control" id="exampleFormControlTextarea1" value="" rows="15">{{ message_crypt }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Go decrypt</button>
+        </div>
+        <div class="col">
+            <div class="form-group mt-3">
+              <label for="exampleFormControlTextarea1">Put your decrypt text here.</label>
+              <textarea name="textdecrypt" class="form-control" id="exampleFormControlTextarea1" value="" rows="15">{{ message_decrypt }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Go crypt</button>
+        </div>
+      </div>
+        </form>
+  </div>
+</div>
+{% endblock %}
